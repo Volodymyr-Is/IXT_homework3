@@ -16,18 +16,31 @@
 
 3)
 #!/bin/bash
+
 {
+
   echo "===== System Info Report ====="
+  
   date
+  
   w
+  
   free -m
+  
   df -h
+  
   ss -tulpn
+  
   ping -c1 -w1 ukr.net && echo "OK" || echo "FAILED"
+  
   find / -perm -4000 -type f 2>/dev/null
+  
   echo "==============================="
+  
   echo
+  
 } >> /var/log/sysinfo
+
 
 :wq
 
