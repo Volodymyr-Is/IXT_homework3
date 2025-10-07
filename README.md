@@ -10,9 +10,9 @@
 
 Пізля того, як опинитесь в терміналі AWS VM, використайте такі команди в терміналі:
 
-1) sudo -i
+1) ```sudo -i```
 
-2) vim /root/sysinfo.sh
+2) ```vim /root/sysinfo.sh```
 
 3)
 ```
@@ -32,10 +32,10 @@
 ```
 (Натисніть Tab і впишіть :wq для виходу)
 
-4) chmod +x /root/sysinfo.sh
+4) ```chmod +x /root/sysinfo.sh```
 
-5) echo "* * * * 1-5 root /root/sysinfo.sh" >> /etc/crontab
+5) ```echo "* * * * 1-5 root /root/sysinfo.sh" >> /etc/crontab```
 
-6) /root/sysinfo.sh
+6) ```/root/sysinfo.sh```
 
-7) tail -n 50 /var/log/sysinfo (або sudo tail -n 50 /var/log/sysinfo)
+7) ```tail -n 50 /var/log/sysinfo (або sudo tail -n 50 /var/log/sysinfo)```
