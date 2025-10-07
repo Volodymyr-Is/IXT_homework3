@@ -29,7 +29,7 @@
   
   df -h
   
-  ss -tulpn
+  ss -tlpn
   
   ping -c1 -w1 ukr.net && echo "OK" || echo "FAILED"
   
